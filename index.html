@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="cuerpo_calculadora">
+        <div id="display" value="0">0</div>
+        <table>
+            <tr>
+                <td><button id="boton_1" value="1" onclick="numeroIntroducido(this.value)">1</button></td>
+                <td><button id="boton_2" value="2" onclick="numeroIntroducido(this.value)">2</button></td>
+                <td><button id="boton_3" value="3" onclick="numeroIntroducido(this.value)">3</button></td>
+                <td><button id="boton_suma" value="suma" onclick="operadorIntroducido(this.value)">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="boton_4" value="4" onclick="numeroIntroducido(this.value)">4</button></td>
+                <td><button id="boton_5" value="5" onclick="numeroIntroducido(this.value)">5</button></td>
+                <td><button id="boton_6" value="6" onclick="numeroIntroducido(this.value)">6</button></td>
+                <td><button id="boton_resta" value="resta" onclick="operadorIntroducido(this.value)">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="boton_7" value="7" onclick="numeroIntroducido(this.value)">7</button></td>
+                <td><button id="boton_8" value="8" onclick="numeroIntroducido(this.value)">8</button></td>
+                <td><button id="boton_9" value="9" onclick="numeroIntroducido(this.value)">9</button></td>
+                <td><button id="boton_multi" value="multi" onclick="operadorIntroducido(this.value)">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="boton_0" value="0" onclick="numeroIntroducido(this.value)">0</button></td>
+                
+                <td><button id="boton_clear" value="clear">C</button></td>
+                <td><button id="boton_calculo" onclick="realizarCalculo()">=</button></td>
+                <td><button id="boton_divi" value="divi" onclick="operadorIntroducido(this.value)">/</button></td>
+            </tr>
+        </table>
+        
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
